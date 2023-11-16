@@ -7,7 +7,9 @@ function App() {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/users");
+        const response = await axios.get(
+          "https://gorgeous-dasik-1b50be.netlify.app/api/users"
+        );
         console.log(response.data);
         setUsers(response.data);
       } catch (error) {
